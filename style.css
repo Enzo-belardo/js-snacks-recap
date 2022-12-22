@@ -1,0 +1,20 @@
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.green-pari{
+    border: solid 1px green;
+    margin-left: 1rem;
+}
+
+.red-dispari{
+    border: solid 1px red;
+}
+
+
+li{
+    list-style-type: none;
+    padding-right: 2.5rem;
+}

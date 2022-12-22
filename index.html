@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <main>
+            <button @click="randomNumber">clicca</button>
+
+            <div class="container">
+                <div  class="red-dispari">
+                    <ul>
+                        <li v-for="number in dispari">{{number}} </li>
+                    </ul>         
+                </div>
+                <div  class="green-pari">
+                    <ul>
+                        <li v-for="number in pari">{{number}}</li>
+                    </ul>       
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

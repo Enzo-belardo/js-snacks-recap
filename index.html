@@ -11,23 +11,31 @@
 <body>
     <div id="app">
         <main>
-            <button @click="randomNumber">clicca</button>
+            <!--
+                <button @click="randomNumber">clicca</button>
+    
+                <div class="container">
+                    <div  class="red-dispari">
+                        <ul>
+                            <li v-for="number in dispari">{{number}} </li>
+                        </ul>         
+                    </div>
+                    <div  class="green-pari">
+                        <ul>
+                            <li v-for="number in pari">{{number}}</li>
+                        </ul>       
+                    </div>
+                </div>
+            -->
 
-            <div class="container">
-                <div  class="red-dispari">
-                    <ul>
-                        <li v-for="number in dispari">{{number}} </li>
-                    </ul>         
-                </div>
-                <div  class="green-pari">
-                    <ul>
-                        <li v-for="number in pari">{{number}}</li>
-                    </ul>       
-                </div>
+            <div>
+                <label for="name"> inserisci il tuo nome</label>
+                <input v-model='userInput'type="text" name="name" id="">
+                <p v-if="userInput != '' ">{{checkIn() == true ? "Puoi entrare" : "Non puoi entare mi dispiace"}}</p>
             </div>
         </main>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="script.js"></script>
+    <script src="script-2.js"></script>
 </body>
 </html>

@@ -28,14 +28,39 @@
                 </div>
             -->
 
+            
+            <!--
             <div>
                 <label for="name"> inserisci il tuo nome</label>
                 <input v-model='userInput'type="text" name="name" id="">
                 <p v-if="userInput != '' ">{{checkIn() == true ? "Puoi entrare" : "Non puoi entare mi dispiace"}}</p>
             </div>
+            -->
+
+
+            <div class="title">
+                <h1>W Social Message</h1>
+            </div>
+            <div class="container-chat">
+                <div class="container-message">
+                    <div class="user" v-for="messages in userMessage" >
+                        <p>{{messages}}</p>
+                    </div>
+                </div>
+                <div class="container-message">
+                    <div class="com" v-for="messages in comMessage">
+                        <p>{{messages}}</p>
+                    </div>
+                </div>         
+            </div>
+            <div class="input-area">
+                <input v-model.trim="message" @keyup.enter="newMessage(message)" type="text" name="text" id="text" placeholder="scrvi qualcosa">
+            </div>
+            
+
         </main>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="script-2.js"></script>
+    <script src="snack-A.js"></script>
 </body>
 </html>
